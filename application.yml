@@ -1,0 +1,13 @@
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8777/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,beans
